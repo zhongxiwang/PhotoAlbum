@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{FB14B588-7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoAlbum.Core.Test", "PhotoAlbum.Core.Test\PhotoAlbum.Core.Test.csproj", "{AD9DD242-345A-49B4-9909-57405DDA096D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D0E830BE-AE3E-451A-8AB8-D6721BA963F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,8 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{54D9A1E1-9967-40CD-A447-B32A45B145F5} = {D0E830BE-AE3E-451A-8AB8-D6721BA963F3}
+		{59EB97D1-CA97-45D4-A9C4-55DA34171029} = {D0E830BE-AE3E-451A-8AB8-D6721BA963F3}
 		{AD9DD242-345A-49B4-9909-57405DDA096D} = {FB14B588-78EC-42DB-B216-8B4D401B1B78}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
