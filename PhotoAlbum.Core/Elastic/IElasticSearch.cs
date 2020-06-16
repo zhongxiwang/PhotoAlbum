@@ -6,5 +6,6 @@ namespace PhotoAlbum.Core.Elastic
 {
     public interface IElasticSearch
     {
+        
     }
 }
