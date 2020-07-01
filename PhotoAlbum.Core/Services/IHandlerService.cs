@@ -4,7 +4,8 @@ using System.Text;
 
 namespace PhotoAlbum.Core.Services
 {
-    interface IHandlerService
+    public interface IHandlerService
     {
+        public void Run();
     }
 }

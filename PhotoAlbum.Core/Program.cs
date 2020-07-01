@@ -47,7 +47,7 @@ namespace PhotoAlbum.Core
 
             var ndexResponse =lowLevelClient.Index<ImageModel>("索引", "PostData", PostData.Serializable(data));
 
-            var searchResponse = lowlevelClient.Search<StringResponse>("people", PostData.Serializable(new
+            var searchResponse = lowLevelClient.Search<StringResponse>("people", PostData.Serializable(new
             {
                 from = 0,
                 size = 10,

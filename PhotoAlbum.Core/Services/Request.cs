@@ -4,7 +4,12 @@ using System.Text;
 
 namespace PhotoAlbum.Core.Services
 {
-    class Request
+    public class Request
     {
+
+        public string Id { get; set; }
+
+        public string Name { get; set; }
+
     }
 }
