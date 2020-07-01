@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
 namespace PhotoAlbum.Core.Services
 {
-    class Request
+    public class Request:Hashtable
     {
+        
     }
 }
