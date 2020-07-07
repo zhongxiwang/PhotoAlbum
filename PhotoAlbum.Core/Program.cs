@@ -1,7 +1,10 @@
 ﻿using Elasticsearch.Net;
 using Nest;
+using PhotoAlbum.Core.DoubleBufferEquque;
 using PhotoAlbum.Core.Elastic;
 using System;
+using System.IO;
+using System.Threading;
 
 namespace PhotoAlbum.Core
 {
@@ -15,6 +18,14 @@ namespace PhotoAlbum.Core
                 new Uri("http://myserver2:9200"),
                 new Uri("http://myserver3:9200")
             };
+            FileInfo fi = new FileInfo(@"C:\Users\zhong\Pictures\riven.jpg");
+            
+            DoubleBufferEqueueChche b = new DoubleBufferEqueueChche();
+            for(int i = 0; i < 1000; i++)
+            {
+                b.Equeue(i.ToString());
+                Thread.Sleep(100);
+            }
 
             var pool = new StaticConnectionPool(nodes);
             //var settings = new ConnectionSettings(pool);
@@ -47,7 +58,7 @@ namespace PhotoAlbum.Core
 
             var ndexResponse =lowLevelClient.Index<ImageModel>("索引", "PostData", PostData.Serializable(data));
 
-            var searchResponse = lowlevelClient.Search<StringResponse>("people", PostData.Serializable(new
+            var searchResponse = lowLevelClient.Search<StringResponse>("people", PostData.Serializable(new
             {
                 from = 0,
                 size = 10,

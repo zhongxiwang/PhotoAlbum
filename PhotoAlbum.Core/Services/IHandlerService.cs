@@ -6,6 +6,6 @@ namespace PhotoAlbum.Core.Services
 {
     public interface IHandlerService
     {
-        public void Execute();
+        public void Run();
     }
 }
