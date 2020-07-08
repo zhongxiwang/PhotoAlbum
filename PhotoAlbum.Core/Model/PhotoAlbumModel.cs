@@ -11,6 +11,11 @@ namespace PhotoAlbum.Core.Model
         {
             Id = Guid.NewGuid().ToString();
         }
+        public PhotoAlbumModel(string name, string path) : this()
+        {
+            this.Name = name;
+            this.Path = path;
+        }
         /// <summary>
         /// 相册名称
         /// </summary>
