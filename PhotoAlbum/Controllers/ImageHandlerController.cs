@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
@@ -15,11 +16,26 @@ namespace PhotoAlbum.Controllers
         /// 上传图片
         /// </summary>
         [HttpPost("ImportImage")]
-        public void ImportImage()
+        public void ImportImage(string Groupid)
         {
+            if (string.IsNullOrEmpty(Groupid)) return NotFound();
             var res= HttpContext.Request.Form.Files.Count();
+            string path = Path.GetTempPath();
+
             ///图片需要缩小并压缩，方便展示
             ///
+            try
+            {
+
+            }catch(Exception e)
+            {
+
+            }
+            finally
+            {
+
+            }
+
         }
 
         /// <summary>
