@@ -18,7 +18,7 @@ namespace PhotoAlbum.Controllers
         [HttpPost("ImportImage")]
         public void ImportImage(string Groupid)
         {
-            if (string.IsNullOrEmpty(Groupid)) return NotFound();
+            if (string.IsNullOrEmpty(Groupid)) return ;
             var res= HttpContext.Request.Form.Files.Count();
             string path = Path.GetTempPath();
 

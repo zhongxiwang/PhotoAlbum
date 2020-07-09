@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ionic.Zip;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
@@ -40,6 +41,11 @@ namespace PhotoAlbum.Core.Uilts
             while ((n = stream.Read(buffer, 0, buffer.Length)) > 0)
                 ms.Write(buffer, 0, n);
             return ms.ToArray();
+        }
+        public static void Zip()
+        {
+            
+            
         }
     }
 }

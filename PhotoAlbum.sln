@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoAlbum", "PhotoAlbum\PhotoAlbum.csproj", "{54D9A1E1-9967-40CD-A447-B32A45B145F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoAlbum", "PhotoAlbum\PhotoAlbum.csproj", "{54D9A1E1-9967-40CD-A447-B32A45B145F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoAlbum.Core", "PhotoAlbum.Core\PhotoAlbum.Core.csproj", "{59EB97D1-CA97-45D4-A9C4-55DA34171029}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoAlbum.Core", "PhotoAlbum.Core\PhotoAlbum.Core.csproj", "{59EB97D1-CA97-45D4-A9C4-55DA34171029}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{FB14B588-78EC-42DB-B216-8B4D401B1B78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoAlbum.Core.Test", "PhotoAlbum.Core.Test\PhotoAlbum.Core.Test.csproj", "{AD9DD242-345A-49B4-9909-57405DDA096D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhotoAlbum.Core.Test", "PhotoAlbum.Core.Test\PhotoAlbum.Core.Test.csproj", "{AD9DD242-345A-49B4-9909-57405DDA096D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D0E830BE-AE3E-451A-8AB8-D6721BA963F3}"
 EndProject
